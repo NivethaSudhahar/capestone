@@ -30,10 +30,7 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 const https = require('https');
 const fs = require('fs');
 
-const options = {
-key: fs.readFileSync('privkey.pem'),
-cert: fs.readFileSync('cert.pem')
-}
+
 
 const httpsServer = https.createServer(options, app);
 httpsServer.listen(port, () => console.log(`Listening on port ${port}`));
