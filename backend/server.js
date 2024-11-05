@@ -32,7 +32,7 @@ const fs = require('fs');
 
 
 
-const httpsServer = https.createServer( app);
+const httpsServer = https.createServer(app);
 httpsServer.listen(port, () => console.log(`Listening on port ${port}`));
 
 // //if ssl certificate
